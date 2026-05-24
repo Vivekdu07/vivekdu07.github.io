@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivekanand Choubey | Research Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #0f172a;
+            --secondary: #2563eb;
+            --text: #334155;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--text); line-height: 1.6; background-color: #ffffff; }
+        
+        .container { max-width: 1050px; margin: 0 auto; padding: 0 2rem; }
+        
+        /* Header & Nav */
+        header { border-bottom: 1px solid var(--border); padding: 1.5rem 0; sticky: top; background: white; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; color: var(--primary); font-size: 1.25rem; text-decoration: none; }
+        .nav-links a { margin-left: 2rem; text-decoration: none; color: var(--text); font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: var(--secondary); }
+
+        /* Hero Section */
+        .hero { padding: 5rem 0 4rem 0; display: flex; gap: 4rem; align-items: center; }
+        .hero-img { width: 220px; height: 220px; border-radius: 50%; object-fit: cover; border: 4px solid var(--border); }
+        .hero-text h1 { font-size: 2.75rem; color: var(--primary); margin-bottom: 0.5rem; font-weight: 800; }
+        .hero-subtitle { font-size: 1.25rem; color: var(--secondary); margin-bottom: 1.5rem; font-weight: 600; }
+        .hero-bio { font-size: 1.05rem; margin-bottom: 1.5rem; max-width: 700px; }
+        
+        .social-icons a { font-size: 1.5rem; color: var(--text); margin-right: 1.2rem; transition: color 0.2s; text-decoration: none; }
+        .social-icons a:hover { color: var(--secondary); }
+
+        /* Stats Grid */
+        .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin: 2rem 0 4rem 0; }
+        .stat-card { background: var(--light); padding: 1.5rem; border-radius: 8px; border: 1px solid var(--border); text-align: center; }
+        .stat-num { font-size: 1.75rem; font-weight: 800; color: var(--secondary); margin-bottom: 0.25rem; }
+        .stat-label { font-size: 0.85rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px; }
+
+        /* Section Layout */
+        section { padding: 4rem 0; border-top: 1px solid var(--border); }
+        section h2 { font-size: 1.75rem; color: var(--primary); margin-bottom: 2rem; font-weight: 700; position: relative; }
+        
+        /* Projects & Publications */
+        .item { margin-bottom: 2.5rem; }
+        .item-title { font-size: 1.2rem; color: var(--primary); font-weight: 700; margin-bottom: 0.5rem; }
+        .item-meta { font-size: 0.9rem; color: #64748b; margin-bottom: 0.75rem; font-weight: 500; }
+        .item-meta span { margin-right: 1.5rem; }
+        .item-desc { font-size: 1rem; margin-bottom: 0.5rem; }
+        
+        /* Skills Tags */
+        .skills-container { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+        .skill-tag { background: var(--light); border: 1px solid var(--border); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; font-weight: 500; color: var(--primary); }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; gap: 2rem; padding: 3rem 0; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav">
+            <a href="#" class="logo">V. Choubey</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#research">Research</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Expertise</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="about" style="border:none;">
+            <img src="profile.jpg" alt="Vivekanand Choubey" class="hero-img">
+            <div class="hero-text">
+                <h1>Vivekanand Choubey</h1>
+                <div class="hero-subtitle">Researcher in Molecular Dynamics & Synthetic Chemistry</div>
+                <p class="hero-bio">
+                    I am a chemical researcher dedicated to uncovering molecular-level solutions to complex biomedical and synthetic challenges. My work spans the intersection of biophysical characterization—using advanced single-molecule detection to pioneer non-invasive cancer diagnostics—and transition metal catalysis for precise organic synthesis.
+                </p>
+                <div class="social-icons">
+                    <a href="mailto:vivekchoubeykmcdu@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Grid -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-num">AIR 54</div>
+                <div class="stat-label">CSIR-NET (LS)</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">AIR 39</div>
+                <div class="stat-label">DU Entrance</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">AIR 801</div>
+                <div class="stat-label">IIT JAM</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-num">01</div>
+                <div class="stat-label">JPCB Publication</div>
+            </div>
+        </div>
+
+        <!-- Research Experience -->
+        <section id="research">
+            <h2>Research Tracks & Experience</h2>
+            
+            <div class="item">
+                <div class="item-title">Investigating Transition-Metal Catalyzed Enantioselective Synthesis</div>
+                <div class="item-meta">
+                    <span><i class="fas fa-building"></i> CSIR-CDRI, Lucknow</span>
+                    <span><i class="fas fa-calendar-alt"></i> 9+ Months (Ongoing)</span>
+                </div>
+                <p class="item-desc">Synthesizing complex molecular frameworks through asymmetric transition-metal catalysis, optimizing reaction pathways for highly selective C-X bond formations under the supervision of Dr. Nilanjana Majumdar (SERB, DST project).</p>
+            </div>
+
+            <div class="item">
+                <div class="item-title">Pioneering Non-Invasive Diagnostics via Single-Molecule Detection</div>
+                <div class="item-meta">
+                    <span><i class="fas fa-building"></i> Shiv Nadar Institution of Eminence</span>
+                    <span><i class="fas fa-calendar-alt"></i> 4 Months</span>
+                </div>
+                <p class="item-desc">Developed biophysical characterization protocols for extracellular vesicles to serve as next-generation, non-invasive diagnostic tools utilizing single-molecule detection (SMD) methods under the supervision of Dr. Tatini Rakshit ((DST)-INSPIRE project).</p>
+            </div>
+
+            <div class="item">
+                <div class="item-title">Synthesis & Characterization of Silver and Gold Nanoparticles</div>
+                <div class="item-meta">
+                    <span><i class="fas fa-building"></i> University of Delhi (Kirori Mal College)</span>
+                    <span><i class="fas fa-graduation-cap"></i> M.Sc. Project</span>
+                </div>
+                <p class="item-desc">Conducted an in-depth literature survey and structural characterization mapping for novel applications of noble metal nanoparticles under the guidance of Prof. R.K. Sharma.</p>
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section id="publications">
+            <h2>Peer-Reviewed Publications</h2>
+            <div class="item">
+                <div class="item-title" style="font-weight: 500; color: var(--text);">
+                    "Label-Free Physical-Analytical Techniques Reveal Epigenetic Modification of Breast Cancer Chromosomes."
+                </div>
+                <div class="item-meta">
+                    <span>T. Agrawal#, D. Paul#, S. Saroj#, A. Ali, <strong>V. Choubey</strong>, D. Mukherjee, S. Pal*, T. Rakshit*.</span><br>
+                    <span style="color: var(--secondary); font-weight:600;">Journal of Physical Chemistry B (2023)</span>
+                </div>
+                <a href="https://doi.org/10.1021/acs.jpcb.3c00147" target="_blank" style="color: var(--secondary); text-decoration: none; font-size: 0.95rem; font-weight: 500;">
+                    <i class="fas fa-external-link-alt"></i> View Publication (DOI: 10.1021/acs.jpcb.3c00147)
+                </a>
+            </div>
+        </section>
+
+        <!-- Technical Expertise -->
+        <section id="skills">
+            <h2>Instrumentation & Technical Expertise</h2>
+            <div class="skills-container">
+                <div class="skill-tag">Fourier-transform Infra-red Spectroscopy (FTIR)</div>
+                <div class="skill-tag">UV-Visible Spectrophotometry</div>
+                <div class="skill-tag">Cyclic Voltammetry</div>
+                <div class="skill-tag">High-Performance Liquid Chromatography (HPLC)</div>
+                <div class="skill-tag">Thin Layer Chromatography (TLC)</div>
+                <div class="skill-tag">High-Speed Centrifugation Fluorescence</div>
+                <div class="skill-tag">Synthetic Organic Chemistry</div>
+                <div class="skill-tag">Organometallics</div>
+            </div>
+        </section>
+
+        <!-- Education & Ranks -->
+        <section id="education">
+            <h2>Education</h2>
+            <div class="item">
+                <div class="item-title">M.Sc. in Chemistry (1st Division)</div>
+                <div class="item-meta">University of Delhi (Kirori Mal College) | Graduated: 2022</div>
+            </div>
+            <div class="item">
+                <div class="item-title">B.Sc. (Hons) in Chemistry (1st Division, Rank 3)</div>
+                <div class="item-meta">Shri Ramswaroop Memorial University | Graduated: 2020</div>
+            </div>
+        </section>
+    </div>
+
+    <footer style="text-align: center; padding: 3rem 0; color: #94a3b8; font-size: 0.9rem; border-top: 1px solid var(--border);">
+        &copy; 2026 Vivekanand Choubey. All rights reserved.
+    </footer>
+
+</body>
+</html>
