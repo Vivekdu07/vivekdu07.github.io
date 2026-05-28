@@ -563,37 +563,65 @@
                         </div>
 </section>
 
-<!-- INTERACTIVE PHOTO GALLERY -->
-<section id="gallery" style="background: var(--card-bg); padding: 40px; border-radius: 12px; border: 1px solid var(--border-color); margin-bottom: 30px;">
-    <h2>Gallery</h2>
-    <p style="color: #64748b; margin-bottom: 20px;">Glimpses from my PhD journey, group meets, and academic events.</p>
-    
-    <!-- Slider Container -->
-    <div class="slider-container" style="position: relative; max-width: 1000px; height: 400px; margin: 0 auto; overflow: hidden; border-radius: 10px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
-        
-        <!-- Slide 1: Group Photo -->
-        <div class="mySlides" style="display: block; position: absolute; width: 100%; height: 100%;">
-            <img src="group.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-            <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.85); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500;">
-                With Dr. Selva Kumar Sermadurai and research group members at IIT Indore.
-            </div>
-        </div>
+<!-- INTERACTIVE PHOTO GALLERY SECTION -->
+        <section id="gallery" style="background: var(--bg-color); padding: 30px; border-radius: 12px; border: 1px solid var(--border-color);">
+            <h2>Gallery</h2>
+            
+            <div class="slider-container" style="position: relative; max-width: 1000px; height: 450px; margin: 20px auto 0 auto; overflow: hidden; border-radius: 10px; border: 1px solid var(--border-color); box-shadow: 0 4px 12px rgba(0,0,0,0.05); background: #000000;">
+                
+                <!-- SNO 1: Colorful Column Photo (NEW) -->
+                <div class="mySlides" style="display: block; position: absolute; width: 100%; height: 100%;">
+                    <img src="column_setup.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 1] High-resolution separation of a reaction mixture showcasing distinct, colorful compound bands during gravity column chromatography at IIT Indore.
+                    </div>
+                </div>
 
-        <!-- Slide 2: PhD Journey Setup -->
-        <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
-            <img src="current_lab.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.src='group.jpg';">
-            <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.85); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500;">
-                Current research setup and journey at IIT Indore.
-            </div>
-        </div>
+                <!-- SNO 2: First Action Photo of You (NEW) -->
+                <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
+                    <img src="column_action1.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;" onerror="this.src='column_setup.jpg';">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 2] Monitoring compound elution profiles and carefully collecting fractions during multi-step organic compound purification phases.
+                    </div>
+                </div>
 
-        <!-- Slide 3: Previous Lab / Seminars -->
-        <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
-            <img src="previous_lab.jpg" style="width: 100%; height: 100%; object-fit: cover; display: block;" onerror="this.src='group.jpg';">
-            <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.85); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500;">
-                Memories and presentation events from my previous research labs.
+                <!-- SNO 3: Second Action Photo of You (NEW) -->
+                <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
+                    <img src="column_action2.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;" onerror="this.src='column_setup.jpg';">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 3] Optimizing solvent system polarities and managing band isolation stages for strategic target product purification.
+                    </div>
+                </div>
+
+                <!-- SNO 4: IIT Indore Workspace Photo (snu_lab.jpg) -->
+                <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
+                    <img src="snu_lab.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;" onerror="this.src='column_setup.jpg';">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 4] Evaluating reaction parameters and setting up visible-light-driven catalytic systems for organosilane synthesis pathways.
+                    </div>
+                </div>
+
+                <!-- SNO 5: CSIR-CDRI Lab Photo -->
+                <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
+                    <img src="cdri_lab.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;" onerror="this.src='column_setup.jpg';">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 5] Handling specialized synthetic configurations and tracking stereoselective transformations during my tenure at CSIR–CDRI, Lucknow.
+                    </div>
+                </div>
+
+                <!-- SNO 6: IIT Indore Group Photo -->
+                <div class="mySlides" style="display: none; position: absolute; width: 100%; height: 100%;">
+                    <img src="group.jpg" style="width: 100%; height: 100%; object-fit: contain; display: block; margin: 0 auto;" onerror="this.src='column_setup.jpg';">
+                    <div style="position: absolute; bottom: 0; background: rgba(15, 23, 42, 0.9); color: #ffffff; width: 100%; padding: 15px; font-size: 0.95rem; text-align: center; font-weight: 500; line-height: 1.4;">
+                        [SNO 6] Core research team members with research supervisor Dr. Selva Kumar Sermadurai at the Indian Institute of Technology Indore.
+                    </div>
+                </div>
+
+                <!-- Slide Navigation Controls -->
+                <button onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; top: 50%; left: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; font-size: 22px; width: 45px; height: 45px; border-radius: 50%; font-weight: bold; color: #0f172a; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">&#10094;</button>
+                <button onclick="plusSlides(1)" style="cursor: pointer; position: absolute; top: 50%; right: 15px; transform: translateY(-50%); background: rgba(255,255,255,0.9); border: none; font-size: 22px; width: 45px; height: 45px; border-radius: 50%; font-weight: bold; color: #0f172a; z-index: 10; display: flex; align-items: center; justify-content: center; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">&#10095;</button>
             </div>
-        </div>
+        </section>
 
         <!-- Navigation Arrows -->
         <button onclick="plusSlides(-1)" style="cursor: pointer; position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(255,255,255,0.8); border: none; font-size: 24px; padding: 8px 14px; border-radius: 50%; font-weight: bold; color: var(--primary-color); z-index: 10; transition: background 0.2s;">&#10094;</button>
